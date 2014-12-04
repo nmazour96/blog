@@ -10,7 +10,6 @@ var wonderFive = document.getElementById('wonderFive');
 var wonderSix = document.getElementById('wonderSix');
 var wonderSeven = document.getElementById('wonderSeven');
 
-
 /*Star variable names and ids are star-starNumber-postNumber-wonderLetter*/
 var starOneOneC = document.getElementById('starOneOneC');
 starOneOneC.addEventListener('click', one_starOneC);
@@ -33,23 +32,30 @@ starFiveOneC.addEventListener('click', one_starFiveC);
 var starFiveOneFC = document.getElementById('starFiveOneFC');
 starFiveOneFC.style.display = 'none';
 
+var ratingOneC = document.getElementById('ratingOneC');
+
 function one_starOneC() {
 	starOneOneC.style.display = 'none';
 	starOneOneFC.style.display = 'inline-block';
+	ratingOneC.innerHTML = '1 STAR';
 }
 function one_starTwoC() {
 	starTwoOneC.style.display = 'none';
 	starTwoOneFC.style.display = 'inline-block';
+	ratingOneC.innerHTML = '2 STARS';
 }
 function one_starThreeC() {
 	starThreeOneC.style.display = 'none';
 	starThreeOneFC.style.display = 'inline-block';
+	ratingOneC.innerHTML = '3 STARS';
 }
 function one_starFourC() {
 	starFourOneC.style.display = 'none';
 	starFourOneFC.style.display = 'inline-block';
+	ratingOneC.innerHTML = '4 STARS';
 }
 function one_starFiveC() {
 	starFiveOneC.style.display = 'none';
 	starFiveOneFC.style.display = 'inline-block';
+	ratingOneC.innerHTML = '5 STARS';
 }
