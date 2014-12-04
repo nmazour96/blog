@@ -123,6 +123,8 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0;
 }
 
+/* Everything below this is ours; above is the bootstrap */
+
 .line-separator {
     height: 5em;
 }
