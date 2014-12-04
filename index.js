@@ -26,7 +26,7 @@ var wonderSeven = document.getElementById('wonderSeven');
 wonderSeven.addEventListener('click', seven_clicks);
 var sevenCount = 0;
 
-var counter = document.getElementById('NumberOfClicks');
+var counter = document.getElementById('numberOfClicks');
 
 //this is an example of sequential factoring:
 function main_clicks() {
