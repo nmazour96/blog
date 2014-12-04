@@ -4,21 +4,21 @@
 var main = document.getElementById('main');
 main.addEventListener('click', main_clicks);
 var wonderOne = document.getElementById('wonderOne');
-wonderOne.addEventListener('click', number_of_clicks);
+wonderOne.addEventListener('click', one_clicks);
 var wonderTwo = document.getElementById('wonderTwo');
-wonderTwo.addEventListener('click', number_of_clicks);
+wonderTwo.addEventListener('click', two_clicks);
 var wonderThree = document.getElementById('wonderThree');
-wonderThree.addEventListener('click', number_of_clicks);
+wonderThree.addEventListener('click', three_clicks);
 var wonderFour = document.getElementById('wonderFour');
-wonderFour.addEventListener('click', number_of_clicks);
+wonderFour.addEventListener('click', four_clicks);
 var wonderFive = document.getElementById('wonderFive');
-wonderFive.addEventListener('click', number_of_clicks);
+wonderFive.addEventListener('click', five_clicks);
 var wonderSix = document.getElementById('wonderSix');
-wonderSix.addEventListener('click', number_of_clicks);
+wonderSix.addEventListener('click', six_clicks);
 var wonderSeven = document.getElementById('wonderSeven');
-wonderSeven.addEventListener('click', number_of_clicks);
+wonderSeven.addEventListener('click', seven_clicks);
 
-var counter = document.getElementById('NumberofClicksMain');
+var counter = document.getElementById('NumberOfClicks');
 
 //this is an example of sequential factoring:
 function main_clicks() {
