@@ -38,11 +38,11 @@ function one_starOneC() {
 	starOneOneC.style.display = 'none';
 	starOneOneFC.style.display = 'inline-block';
 	ratingOneC.innerHTML = '1 STAR';
-	starOneOneC.addEventListener('click', one_starOneC);
-	starTwoOneC.addEventListener('click', two_starsOneC);
-	starThreeOneC.addEventListener('click', three_starsOneC);
-	starFourOneC.addEventListener('click', four_starsOneC);
-	starFiveOneC.addEventListener('click', five_starsOneC);
+	starOneOneC.removeEventListener('click', one_starOneC);
+	starTwoOneC.removeEventListener('click', two_starsOneC);
+	starThreeOneC.removeEventListener('click', three_starsOneC);
+	starFourOneC.removeEventListener('click', four_starsOneC);
+	starFiveOneC.removeEventListener('click', five_starsOneC);
 }
 function two_starsOneC() {
 	starTwoOneC.style.display = 'none';
@@ -50,11 +50,11 @@ function two_starsOneC() {
 	starTwoOneFC.style.display = 'inline-block';
 	starOneOneFC.style.display = 'inline-block';
 	ratingOneC.innerHTML = '2 STARS';
-	starOneOneC.addEventListener('click', one_starOneC);
-	starTwoOneC.addEventListener('click', two_starsOneC);
-	starThreeOneC.addEventListener('click', three_starsOneC);
-	starFourOneC.addEventListener('click', four_starsOneC);
-	starFiveOneC.addEventListener('click', five_starsOneC);
+	starOneOneC.removeEventListener('click', one_starOneC);
+	starTwoOneC.removeEventListener('click', two_starsOneC);
+	starThreeOneC.removeEventListener('click', three_starsOneC);
+	starFourOneC.removeEventListener('click', four_starsOneC);
+	starFiveOneC.removeEventListener('click', five_starsOneC);
 }
 function three_starsOneC() {
 	starThreeOneC.style.display = 'none';
@@ -64,11 +64,11 @@ function three_starsOneC() {
 	starTwoOneFC.style.display = 'inline-block';
 	starOneOneFC.style.display = 'inline-block';
 	ratingOneC.innerHTML = '3 STARS';
-	starOneOneC.addEventListener('click', one_starOneC);
-	starTwoOneC.addEventListener('click', two_starsOneC);
-	starThreeOneC.addEventListener('click', three_starsOneC);
-	starFourOneC.addEventListener('click', four_starsOneC);
-	starFiveOneC.addEventListener('click', five_starsOneC);
+	starOneOneC.removeEventListener('click', one_starOneC);
+	starTwoOneC.removeEventListener('click', two_starsOneC);
+	starThreeOneC.removeEventListener('click', three_starsOneC);
+	starFourOneC.removeEventListener('click', four_starsOneC);
+	starFiveOneC.removeEventListener('click', five_starsOneC);
 }
 function four_starsOneC() {
 	starFourOneC.style.display = 'none';
@@ -80,11 +80,11 @@ function four_starsOneC() {
 	starTwoOneFC.style.display = 'inline-block';
 	starOneOneFC.style.display = 'inline-block';
 	ratingOneC.innerHTML = '4 STARS';
-	starOneOneC.addEventListener('click', one_starOneC);
-	starTwoOneC.addEventListener('click', two_starsOneC);
-	starThreeOneC.addEventListener('click', three_starsOneC);
-	starFourOneC.addEventListener('click', four_starsOneC);
-	starFiveOneC.addEventListener('click', five_starsOneC);
+	starOneOneC.removeEventListener('click', one_starOneC);
+	starTwoOneC.removeEventListener('click', two_starsOneC);
+	starThreeOneC.removeEventListener('click', three_starsOneC);
+	starFourOneC.removeEventListener('click', four_starsOneC);
+	starFiveOneC.removeEventListener('click', five_starsOneC);
 }
 function five_starsOneC() {
 	starFiveOneC.style.display = 'none';
@@ -98,9 +98,9 @@ function five_starsOneC() {
 	starTwoOneFC.style.display = 'inline-block';
 	starOneOneFC.style.display = 'inline-block';
 	ratingOneC.innerHTML = '5 STARS';
-	starOneOneC.addEventListener('click', one_starOneC);
-	starTwoOneC.addEventListener('click', two_starsOneC);
-	starThreeOneC.addEventListener('click', three_starsOneC);
-	starFourOneC.addEventListener('click', four_starsOneC);
-	starFiveOneC.addEventListener('click', five_starsOneC);
+	starOneOneC.removeEventListener('click', one_starOneC);
+	starTwoOneC.removeEventListener('click', two_starsOneC);
+	starThreeOneC.removeEventListener('click', three_starsOneC);
+	starFourOneC.removeEventListener('click', four_starsOneC);
+	starFiveOneC.removeEventListener('click', five_starsOneC);
 }
