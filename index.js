@@ -35,21 +35,21 @@ starFiveOneFC.style.display = 'none';
 
 function one_starOneC() {
 	starOneOneC.style.display = 'none';
-	starOneOneFC.style.display = 'block';
+	starOneOneFC.style.display = 'inline-block';
 }
 function one_starTwoC() {
 	starTwoOneC.style.display = 'none';
-	starTwoOneFC.style.display = 'block';
+	starTwoOneFC.style.display = 'inline-block';
 }
 function one_starThreeC() {
 	starThreeOneC.style.display = 'none';
-	starThreeOneFC.style.display = 'block';
+	starThreeOneFC.style.display = 'inline-block';
 }
 function one_starFourC() {
 	starFourOneC.style.display = 'none';
-	starFourOneFC.style.display = 'block';
+	starFourOneFC.style.display = 'inline-block';
 }
 function one_starFiveC() {
 	starFiveOneC.style.display = 'none';
-	starFiveOneFC.style.display = 'block';
+	starFiveOneFC.style.display = 'inline-block';
 }
