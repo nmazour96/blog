@@ -137,7 +137,12 @@ img {
 	width: 700px;
 }
 
-.thumbs {
+.thumbsUp {
+	width: 25px;
+	height: 25px;
+}
+
+.thumbsDown {
 	width: 25px;
 	height: 25px;
 }
