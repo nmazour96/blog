@@ -95,8 +95,9 @@ pictureLink.addEventListener('click', picture_archive);
 var next = document.getElementById('next');
 next.addEventListener('click', picture_archive);
 
+var currentPicture = 0; 
+
 function picture_archive() {
-	var currentPicture = 0; 
 	pictures[currentPicture].style.display = 'block';
 	pictures[currentPicture - 1].style.display = 'none';
 	currentPicture = currentPicture + 1
