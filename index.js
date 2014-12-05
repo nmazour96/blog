@@ -98,5 +98,4 @@ next.addEventListener('click', picture_archive);
 function picture_archive() {
 	for (var currentPicture = 0; currentPicture < pictures.length; currentPicture = currentPicture + 1)
 	pictures[currentPicture].display = 'block';
-	pictures[currentPicture - 1].display = 'none';
 }
