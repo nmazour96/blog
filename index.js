@@ -10,6 +10,8 @@ var wonderFive = document.getElementById('wonderFive');
 var wonderSix = document.getElementById('wonderSix');
 var wonderSeven = document.getElementById('wonderSeven');
 
+var none = document.getElementById('blank');
+
 var CROne = document.getElementById('CROne');
 CROne.style.display = 'none';
 var CRTwo = document.getElementById('CRTwo');
@@ -87,31 +89,32 @@ TFour.style.display = 'none';
 var TFive = document.getElementById('TFive');
 TFive.style.display = 'none';
 
+var currentPicture = 1; 
+
 var pictureTitle = document.getElementById('pictureTitle');
 
-var pictures = [CROne, CRTwo, CRThree, CRFour, CRFive, GWOne, GWTwo, GWThree, GWFour, GWFive, POne, PTwo, PThree, PFour, PFive, COne, CTwo, CThree, CFour, CFive, CIOne, CITwo, CIThree, CIFour, CIFive, MPOne, MPTwo, MPThree, MPFour, MPFive, TOne, TTwo, TThree, TFour, TFive]; 
+var pictures = [none, CROne, CRTwo, CRThree, CRFour, CRFive, GWOne, GWTwo, GWThree, GWFour, GWFive, POne, PTwo, PThree, PFour, PFive, COne, CTwo, CThree, CFour, CFive, CIOne, CITwo, CIThree, CIFour, CIFive, MPOne, MPTwo, MPThree, MPFour, MPFive, TOne, TTwo, TThree, TFour, TFive]; 
 
 var next = document.getElementById('next');
 next.addEventListener('click', picture_archive);
 
-var currentPicture = 0; 
-
 /* This is an example of alternative and parallel? factoring */
 function picture_archive() {
 	pictures[currentPicture].style.display = 'block';
-	if (0 <= currentPicture <= 4) {
+	pictures[currentPicture - 1].style.display = 'none';
+	if (1 <= currentPicture <= 5) {
 		pictureTitle.innerHTML = 'The Christ Redeemer';
-	} else if (5 <= currentPicture <= 9) {
+	} else if (6 <= currentPicture <= 10) {
 		pictureTitle.innerHTML = 'The Great Wall of China';
-	} else if (10 <= currentPicture <= 14) {
+	} else if (11 <= currentPicture <= 15) {
 		pictureTitle.innerHTML = 'Petra';
-	} else if (15 <= currentPicture <= 19) {
+	} else if (16 <= currentPicture <= 20) {
 		pictureTitle.innerHTML = 'The Roman Coloseum';
-	} else if (20 <= currentPicture <= 24) {
+	} else if (21 <= currentPicture <= 25) {
 		pictureTitle.innerHTML = 'Chichen Itza';
-	} else if (25 <= currentPicture <= 29) {
+	} else if (26 <= currentPicture <= 30) {
 		pictureTitle.innerHTML = 'Machu Picchu';
-	} else if (30 <= currentPicture <= 34) {
+	} else if (31 <= currentPicture <= 35) {
 		pictureTitle.innerHTML = 'The Taj Mahal';
     }
     currentPicture = currentPicture + 1;
