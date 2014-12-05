@@ -99,7 +99,6 @@ var currentPicture = 0;
 /* This is an example of alternative and parallel? factoring */
 function picture_archive() {
 	pictures[currentPicture].style.display = 'block';
-	pictures[currentPicture - 1].style.display = 'none';
 	if (0 <= currentPicture <= 4) {
 		pictureTitle.innerHTML = 'The Christ Redeemer';
 	} else if (5 <= currentPicture <= 9) {
