@@ -11,7 +11,6 @@ var wonderSix = document.getElementById('wonderSix');
 var wonderSeven = document.getElementById('wonderSeven');
 
 var CROne = document.getElementById('CROne');
-CROne.style.display = 'none';
 var CRTwo = document.getElementById('CRTwo');
 CRTwo.style.display = 'none';
 var CRThree = document.getElementById('CRThree');
@@ -95,7 +94,7 @@ pictureLink.addEventListener('click', picture_archive);
 var next = document.getElementById('next');
 next.addEventListener('click', picture_archive);
 
-var currentPicture = 0; 
+var currentPicture = 1; 
 
 function picture_archive() {
 	pictures[currentPicture].style.display = 'block';
