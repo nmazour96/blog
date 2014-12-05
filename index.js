@@ -105,17 +105,17 @@ function picture_archive() {
 	pictures[currentPicture - 1].style.display = 'none';
 	if (currentPicture <= 5) {
 		pictureTitle.innerHTML = 'The Christ Redeemer';
-	} else if (6 <= currentPicture <= 10) {
+	} else if (currentPicture <= 10) {
 		pictureTitle.innerHTML = 'The Great Wall of China';
-	} else if (11 <= currentPicture <= 15) {
+	} else if (currentPicture <= 15) {
 		pictureTitle.innerHTML = 'Petra';
-	} else if (16 <= currentPicture <= 20) {
+	} else if (currentPicture <= 20) {
 		pictureTitle.innerHTML = 'The Roman Coloseum';
-	} else if (21 <= currentPicture <= 25) {
+	} else if (currentPicture <= 25) {
 		pictureTitle.innerHTML = 'Chichen Itza';
-	} else if (26 <= currentPicture <= 30) {
+	} else if (currentPicture <= 30) {
 		pictureTitle.innerHTML = 'Machu Picchu';
-	} else if (31 <= currentPicture <= 35) {
+	} else if (currentPicture <= 35) {
 		pictureTitle.innerHTML = 'The Taj Mahal';
     }
     currentPicture = currentPicture + 1;
