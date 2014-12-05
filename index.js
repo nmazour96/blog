@@ -99,5 +99,5 @@ var currentPicture = 1;
 function picture_archive() {
 	pictures[currentPicture].style.display = 'block';
 	pictures[currentPicture - 1].style.display = 'none';
-	currentPicture = currentPicture + 1
+	currentPicture = currentPicture + 1;
 }
