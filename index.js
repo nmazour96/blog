@@ -118,8 +118,9 @@ function picture_archive() {
 	} else if (currentPicture < 36) {
 		pictureTitle.innerHTML = 'The Taj Mahal';
     } else if (currentPicture === 36) {
-    	currentPicture = 1;
-    	picture_archive();
+    	pictureTitle.innerHTML = 'The Taj Mahal';
+    	next.removeEventListener('click', picture_archive);
+    	next.style.opacity = '.5';
     }
     currentPicture = currentPicture + 1;
 }
