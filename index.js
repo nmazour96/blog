@@ -115,8 +115,10 @@ function picture_archive() {
 		pictureTitle.innerHTML = 'Chichen Itza';
 	} else if (currentPicture <= 30) {
 		pictureTitle.innerHTML = 'Machu Picchu';
-	} else if (currentPicture <= 35) {
+	} else if (currentPicture < 36) {
 		pictureTitle.innerHTML = 'The Taj Mahal';
+    } else if (currentPicture === 36) {
+    	currentPicture = 1;
     }
     currentPicture = currentPicture + 1;
 }
