@@ -119,6 +119,7 @@ function picture_archive() {
 		pictureTitle.innerHTML = 'The Taj Mahal';
     } else if (currentPicture === 36) {
     	currentPicture = 1;
+    	picture_archive();
     }
     currentPicture = currentPicture + 1;
 }
