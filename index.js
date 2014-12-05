@@ -103,7 +103,7 @@ function picture_archive() {
 	pictureTitle.innerHTML = "";
 	pictures[currentPicture].style.display = 'block';
 	pictures[currentPicture - 1].style.display = 'none';
-	if (1 <= currentPicture <= 5) {
+	if (currentPicture <= 5) {
 		pictureTitle.innerHTML = 'The Christ Redeemer';
 	} else if (6 <= currentPicture <= 10) {
 		pictureTitle.innerHTML = 'The Great Wall of China';
