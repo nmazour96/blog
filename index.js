@@ -33,53 +33,53 @@ var downFiveC = document.getElementById('downFiveC');
 downFiveC.addEventListener('click', DownFiveC);
 
 function UpOneC() {
-	upOneC.style.color = '#071';
+	upOneC.style.backgroundColor = '#071';
 	upOneC.removeEventListener('click', UpOneC);
 	downOneC.removeEventListener('click', DownOneC);
 }
 function UpTwoC() {
-	upTwoC.style.color = '#071';
+	upTwoC.style.backgroundColor = '#071';
 	upTwoC.removeEventListener('click', UpTwoC);
 	downTwoC.removeEventListener('click', DownTwoC);
 }
 function UpThreeC() {
-	upThreeC.style.color = '#071';
+	upThreeC.style.backgroundColor = '#071';
 	upThreeC.removeEventListener('click', UpThreeC);
 	downThreeC.removeEventListener('click', DownThreeC);
 }
 function UpFourC() {
-	upFourC.style.color = '#071';
+	upFourC.style.backgroundColor = '#071';
 	upFourC.removeEventListener('click', UpFourC);
 	downFourC.removeEventListener('click', DownFourC);
 }
 function UpFiveC() {
-	upFiveC.style.color = '#071';
+	upFiveC.style.backgroundColor = '#071';
 	upFiveC.removeEventListener('click', UpFiveC);
 	downFiveC.removeEventListener('click', DownFiveC);
 }
 
 function DownOneC() {
-	downOneC.style.color = '#F00';
+	downOneC.style.backgroundColor = '#F00';
 	upOneC.removeEventListener('click', UpOneC);
 	downOneC.removeEventListener('click', DownOneC);
 }
 function DownTwoC() {
-	downTwoC.style.color = '#F00';
+	downTwoC.style.backgroundColor = '#F00';
 	upTwoC.removeEventListener('click', UpTwoC);
 	downTwoC.removeEventListener('click', DownTwoC);
 }
 function DownThreeC() {
-	downThreeC.style.color = '#F00';
+	downThreeC.style.backgroundColor = '#F00';
 	upThreeC.removeEventListener('click', UpThreeC);
 	downThreeC.removeEventListener('click', DownThreeC);
 }
 function DownFourC() {
-	downFourC.style.color = '#F00';
+	downFourC.style.backgroundColor = '#F00';
 	upFourC.removeEventListener('click', UpFourC);
 	downFourC.removeEventListener('click', DownFourC);
 }
 function DownFiveC() {
-	downFiveC.style.color = '#F00';
+	downFiveC.style.backgroundColor = '#F00';
 	upFiveC.removeEventListener('click', UpFiveC);
 	downFiveC.removeEventListener('click', DownFiveC);
 }
