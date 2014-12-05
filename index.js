@@ -116,7 +116,7 @@ function picture_archive() {
 	} else if (currentPicture <= 30) {
 		pictureTitle.innerHTML = 'Machu Picchu';
 	} else if (currentPicture <= 36) {
-		pictureTitle.innerHTML = 'The Taj Mahal'
+		pictureTitle.innerHTML = 'The Taj Mahal';
 	}
     currentPicture = currentPicture + 1;
 }
