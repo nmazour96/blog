@@ -86,6 +86,8 @@ TFour.style.display = 'none';
 var TFive = document.getElementById('TFive');
 TFive.style.display = 'none';
 
+var pictureTitle = document.getElementById('pictureTitle');
+
 var pictures = [CROne, CRTwo, CRThree, CRFour, CRFive, GWOne, GWTwo, GWThree, GWFour, GWFive, POne, PTwo, PThree, PFour, PFive, COne, CTwo, CThree, CFour, CFive, CIOne, CITwo, CIThree, CIFour, CIFive, MPOne, MPTwo, MPThree, MPFour, MPFive, TOne, TTwo, TThree, TFour, TFive]; 
 
 var pictureLink = document.getElementById('pictureLink');
@@ -96,8 +98,24 @@ next.addEventListener('click', picture_archive);
 
 var currentPicture = 1; 
 
+/* This is an example of alternative and parallel? factoring */
 function picture_archive() {
 	pictures[currentPicture].style.display = 'block';
 	pictures[currentPicture - 1].style.display = 'none';
-	currentPicture = currentPicture + 1;
+	if (1 <= currentPicture <= 4) {
+		pictureTitle.innerHTML = 'The Christ Redeemer';
+	} else if (5 <= currentPicture <= 9) {
+		pictureTitle.innerHTML = 'The Great Wall of China';
+	} else if (10 <= currentPicture <= 14) {
+		pictureTitle.innerHTML = 'Petra';
+	} else if (15 <= currentPicture <= 19) {
+		pictureTitle.innerHTML = 'The Roman Coloseum';
+	} else if (20 <= currentPicture <= 24) {
+		pictureTitle.innerHTML = 'Chichen Itza';
+	} else if (25 <= currentPicture <= 29) {
+		pictureTitle.innerHTML = 'Machu Picchu';
+	} else if (30 <= currentPicture <= 34) {
+		pictureTitle.innerHTML = 'The Taj Mahal';
+    }
+    currentPicture = currentPicture + 1;
 }
