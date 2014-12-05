@@ -11,6 +11,7 @@ var wonderSix = document.getElementById('wonderSix');
 var wonderSeven = document.getElementById('wonderSeven');
 
 var CROne = document.getElementById('CROne');
+CROne.style.display = 'none';
 var CRTwo = document.getElementById('CRTwo');
 CRTwo.style.display = 'none';
 var CRThree = document.getElementById('CRThree');
@@ -90,19 +91,16 @@ var pictureTitle = document.getElementById('pictureTitle');
 
 var pictures = [CROne, CRTwo, CRThree, CRFour, CRFive, GWOne, GWTwo, GWThree, GWFour, GWFive, POne, PTwo, PThree, PFour, PFive, COne, CTwo, CThree, CFour, CFive, CIOne, CITwo, CIThree, CIFour, CIFive, MPOne, MPTwo, MPThree, MPFour, MPFive, TOne, TTwo, TThree, TFour, TFive]; 
 
-var pictureLink = document.getElementById('pictureLink');
-pictureLink.addEventListener('click', picture_archive);
-
 var next = document.getElementById('next');
 next.addEventListener('click', picture_archive);
 
-var currentPicture = 1; 
+var currentPicture = 0; 
 
 /* This is an example of alternative and parallel? factoring */
 function picture_archive() {
 	pictures[currentPicture].style.display = 'block';
 	pictures[currentPicture - 1].style.display = 'none';
-	if (1 <= currentPicture <= 4) {
+	if (0 <= currentPicture <= 4) {
 		pictureTitle.innerHTML = 'The Christ Redeemer';
 	} else if (5 <= currentPicture <= 9) {
 		pictureTitle.innerHTML = 'The Great Wall of China';
