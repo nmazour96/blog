@@ -121,16 +121,21 @@ function picture_archive() {
     currentPicture = currentPicture + 1;
 }
 
-var postList = [var postOne = document.getElementById('postOne'), var postTwo = document.getElementById('postTwo'), var postThree = document.getElementById('postThree'), var postFour = document.getElementById('postFour'), var postFive = document.getElementById('postFive')]
-
+var postOne = document.getElementById('postOne');
+var postTwo = document.getElementById('postTwo');
 postTwo.style.display = 'none';
+var postThree = document.getElementById('postThree');
 postThree.style.display = 'none';
+var postFour = document.getElementById('postFour');
 postFour.style.display = 'none';
+var postFive = document.getElementById('postFive');
 postFive.style.display = 'none';
+
+var postList = [postOne, postTwo, postThree, postFour, postFive];
 
 function posts() {
 	var currentPost = 1;
-	postList[currenPost - 1].display = 'none';
+	postList[currentPost - 1].display = 'none';
 	postList[currentPost].style.display = 'block';
 	currentPost = currentPost + 1;
 }
