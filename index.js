@@ -98,7 +98,7 @@ var pictures = [none, CROne, CRTwo, CRThree, CRFour, CRFive, GWOne, GWTwo, GWThr
 var next = document.getElementById('next');
 next.addEventListener('click', picture_archive);
 
-/* This is an example of alternative and parallel? factoring */
+/* This is an example of alternative and sequential factoring */
 function picture_archive() {
 	pictureTitle.innerHTML = "";
 	pictures[currentPicture].style.display = 'block';
@@ -120,3 +120,20 @@ function picture_archive() {
 	}
     currentPicture = currentPicture + 1;
 }
+
+var postList = [var postOne = document.getElementById('postOne'), var postTwo = document.getElementById('postTwo'), var postThree = document.getElementById('postThree'), var postFour = document.getElementById('postFour'), var postFive = document.getElementById('postFive')]
+
+postTwo.style.display = 'none';
+postThree.style.display = 'none';
+postFour.style.display = 'none';
+postFive.style.display = 'none';
+
+function posts() {
+	var currentPost = 1;
+	postList[currenPost - 1].display = 'none';
+	postList[currentPost].style.display = 'block';
+	currentPost = currentPost + 1;
+}
+
+var nextPostOne = document.getElementById('nextPostOne');
+nextPostOne.addEventListener('click', posts);
